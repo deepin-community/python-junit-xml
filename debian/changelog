@@ -1,5 +1,113 @@
-template-repository (1.0-1) unstable; urgency=medium
+python-junit-xml (1.9-5) unstable; urgency=medium
 
-  * Initial release
+  * Ignore .egg-info diff (Closes: #1049232)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Debian Janitor ]
+  * Update standards version to 4.6.1, no changes needed.
+
+ -- Bastian Germann <bage@debian.org>  Sat, 04 Nov 2023 21:27:05 +0100
+
+python-junit-xml (1.9-4) unstable; urgency=medium
+
+  * Use pyproject for build
+
+ -- Bastian Germann <bage@debian.org>  Sat, 15 Oct 2022 10:29:32 +0200
+
+python-junit-xml (1.9-3) unstable; urgency=medium
+
+  * Adopt package (Closes: #888216)
+
+ -- Bastian Germann <bage@debian.org>  Wed, 06 Jul 2022 23:02:07 +0200
+
+python-junit-xml (1.9-2) unstable; urgency=low
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Ondřej Nový ]
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Sandro Tosi ]
+  * Use the new Debian Python Team contact name and address
+
+ -- Sandro Tosi <morph@debian.org>  Sat, 04 Jun 2022 22:15:55 -0400
+
+python-junit-xml (1.9-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Ondřej Nový ]
+  * Bump Standards-Version to 4.4.1.
+
+  [ Antonio Terceiro ]
+  * New upstream version 1.9
+    - Upstream did not publish a source release to pypi. The orig tarball
+      used is taken from their git repository at ba89b41638df8ad2011c
+    - Tests now pass under python 3.8 (Closes: #954517)
+  * Bump debhelper-compat to 13
+  * Bump Standards-Version to 4.5.0; no changes needed
+  * debian/control: run tests with pytest. Upstream changed setup.py in a way
+    that relying on setup.py test no longer works.
+  * Add debian/tests/control to run testsuite under autopkgtest
+
+ -- Antonio Terceiro <terceiro@debian.org>  Mon, 13 Jul 2020 10:42:16 -0300
+
+python-junit-xml (1.8-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Convert git repository from git-dpm to gbp layout
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Sandro Tosi ]
+  * Drop python 2 support + use pybuild + add six to b-d, tests
+  * debian/control
+    - bump Standards-Version to 4.4.0 (no changes needed)
+  * debian-copyright
+    - extend packaging copyright years
+
+ -- Sandro Tosi <morph@debian.org>  Tue, 27 Aug 2019 22:31:13 -0400
+
+python-junit-xml (1.8-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/watch: Use https protocol
+
+  [ Sandro Tosi ]
+  * New upstream release
+  * debian/copyright
+    - extend packaging copyright years
+  * debian/control
+    - bump Standards-Version to 4.1.4 (no changes needed)
+
+ -- Sandro Tosi <morph@debian.org>  Mon, 11 Jun 2018 00:31:42 -0400
+
+python-junit-xml (1.7-1) unstable; urgency=medium
+
+  [ Sandro Tosi ]
+  * New upstream release
+  * debian/copyright
+    - extend packaging copyright years
+  * debian/control
+    - bump Standards-Version to 3.9.8 (no changes needed)
+
+  [ Ondřej Nový ]
+  * Fixed VCS URL (https)
+
+ -- Sandro Tosi <morph@debian.org>  Sat, 11 Jun 2016 21:03:49 +0100
+
+python-junit-xml (1.6-1) unstable; urgency=medium
+
+  * New upstream release
+  * debian/control
+    - adjust Vcs-Browser to DPMT standards
+
+ -- Sandro Tosi <morph@debian.org>  Wed, 04 Nov 2015 20:20:18 +0000
+
+python-junit-xml (1.4-1) unstable; urgency=low
+
+  * Initial release (Closes: #791821)
+
+ --  Tosi <morph@debian.org>  Wed, 08 Jul 2015 13:21:56 -0400
